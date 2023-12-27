@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MessageActivity"
+    android:background="@color/lightest_yellow_orange2">
+
+    <RelativeLayout
+        android:id="@+id/outSideMessageEtRl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/messageRl">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tool_bar"
+            android:background="@color/lightest_yellow_orange"
+            app:navigationIcon="@drawable/ic_baseline_arrow_back_ios_24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Tin Nhắn"
+                android:textColor="@color/text_color"
+                android:textSize="16sp"/>
+        </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/conversationRv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tool_bar" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/messageRl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_alignParentBottom="true">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:padding="12dp"
+            android:hint="Tin nhắn"
+            android:background="@null"
+            android:id="@+id/messageEt"
+            android:layout_toStartOf="@id/sendMessageBtn"/>
+
+        <ImageView
+            android:id="@+id/sendMessageBtn"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/send_message"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp" />
+        <ImageView
+            android:id="@+id/selectPictureBtn"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/image_icon"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp" />
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

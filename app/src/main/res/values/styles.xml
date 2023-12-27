@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="custom_progressBar" parent="@style/Theme.AppCompat">
+        <item name="colorAccent">@color/yellow_orange</item>
+    </style>
+
+    <style name="MyDatePickerStyle" parent="@android:style/Widget.Material.DatePicker">
+        <item name="colorControlNormal">@color/lighter_yellow_orange</item>
+        <!-- Thay đổi màu cho ngày được chọn -->
+        <item name="colorAccent">@color/text_color</item>
+    </style>
+</resources>

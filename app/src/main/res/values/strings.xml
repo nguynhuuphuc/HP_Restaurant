@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">HP Restaurant</string>
+    <string name="password">Mật khẩu</string>
+    <string name="new_password">Mật khẩu mới</string>
+    <string name="re_password">Nhập lại mật khẩu</string>
+    <string name="current_password">Mật khẩu hiện tại</string>
+    <string name="phone_number">Số điện thoại</string>
+    <string name="forgot_password">Quên mật khẩu?</string>
+    <string name="login">Đăng nhập</string>
+    <string name="submit">Xác nhận</string>
+    <string name="sign_up"><u>Đăng ký</u></string>
+    <string name="resend_otp"><u>Gửi lại OTP</u></string>
+    <string name="logout">Đăng xuất</string>
+    <string name="update_info">Cập nhật thông tin</string>
+    <string name="change_password">Đổi mật khẩu</string>
+    <string name="incorrect_password">Sai mật khẩu!!!</string>
+    <string name="re_password_empty">Chưa nhập lại mật khẩu!!!</string>
+    <string name="re_password_incorrect">Nhập lại không đúng!!!</string>
+    <string name="password_empty">Chưa nhập mật khẩu!!!</string>
+    <string name="re_sign_in">Đăng nhập lại</string>
+    <string name="cancel">Hủy</string>
+    <string name="your_name">Tên của bạn</string>
+    <string name="gender">Giới tính</string>
+    <string name="date_of_birth_pick">Chọn ngày sinh</string>
+    <string name="email">Email</string>
+    <string name="date_picker">Chọn ngày</string>
+    <string name="in_progress_booking_table_content">Hệ thống đang giữ chỗ cho bạn! \nĐợi một xíu nha!</string>
+    <string name="channel_name">channel 1</string>
+    <string name="channel_description">channel description</string>
+</resources>

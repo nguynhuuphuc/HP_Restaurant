@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="5dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/imageItemInMenuRl"
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_baseline_local_dining_24"
+                android:id="@+id/imageItemInMenuIv">
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/checkIv"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/circle_background_for_add_remove_btn"
+                android:src="@drawable/check_icon"
+                app:tint="@color/text_color"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/nameItemInMenuTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@id/imageItemInMenuRl"
+            android:text="Name"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/priceItemInMenuTv"
+                android:text="10,000"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@id/imageItemInMenuRl"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:id="@+id/selectQuantityLl">
+
+            <ImageView
+                android:id="@+id/minusIv"
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:src="@drawable/remove_icon"
+                android:background="@drawable/circle_background_for_add_remove_btn"
+                app:tint="@color/text_color" />
+            <EditText
+                android:id="@+id/quantityNumberEt"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:inputType="number"
+                android:background="@null"/>
+
+            <ImageView
+                android:id="@+id/plussIv"
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:src="@drawable/add_icon"
+                android:background="@drawable/circle_background_for_add_remove_btn"
+                app:tint="@color/text_color" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
