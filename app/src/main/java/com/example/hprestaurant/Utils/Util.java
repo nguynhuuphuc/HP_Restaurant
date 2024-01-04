@@ -32,7 +32,7 @@ import java.util.List;
 import java.util.Map;
 
 public class Util {
-    public static final String HOST = "192.168.1.205";
+    public static final String HOST = "172.20.10.5";
     public static final String RESTAURANT_PHONE = "0343026233";
     public static final String WEBSOCKET_URL = "ws://" + HOST+":3000";
     private static BitmapDrawable bitmapDrawable;
